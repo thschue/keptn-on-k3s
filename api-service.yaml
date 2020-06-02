@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-service
-          image: keptn/api:0.6.2
+          image: eu.gcr.io/sai-research/sidecar/api
           ports:
             - containerPort: 8080
           resources:
