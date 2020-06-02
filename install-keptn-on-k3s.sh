@@ -88,7 +88,7 @@ function install_keptn {
 
   "${K3SKUBECTLCMD}" "${K3SKUBECTLOPT}" create secret generic -n keptn keptn-api-token --from-literal=keptn-api-token="$KEPTN_API_TOKEN"
 
-  apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/keptn/core.yaml"
+  apply_manifest "https://raw.githubusercontent.com/thschue/keptn-on-k3s/master/keptn-core.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/keptn/keptn-domain-configmap.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/keptn/api-gateway-nginx.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/keptn/quality-gates.yaml"
