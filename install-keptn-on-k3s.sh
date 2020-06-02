@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BINDIR="/usr/local/bin"
-KEPTNVERSION="0.6.2"
+KEPTNVERSION="master"
 KEPTN_API_TOKEN="$(head -c 16 /dev/urandom | base64)"
 MY_IP=${1-}
 K3SKUBECTLCMD="${BINDIR}/k3s"
