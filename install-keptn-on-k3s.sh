@@ -82,7 +82,7 @@ function install_keptn {
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/logging/mongodb/pvc.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/logging/mongodb/deployment.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/logging/mongodb/svc.yaml"
-  apply_manifest "https://raw.githubusercontent.com/thschue/keptn-on-k3s/master/mongo-datastore.yaml"
+  apply_manifest "https://raw.githubusercontent.com/thschue/keptn-on-k3s/master/mongodb-datastore.yaml"
   apply_manifest "https://raw.githubusercontent.com/keptn/keptn/${KEPTNVERSION}/installer/manifests/logging/mongodb-datastore/mongodb-datastore-distributor.yaml"
   "${K3SKUBECTLCMD}" "${K3SKUBECTLOPT}" wait --namespace=keptn-datastore --for=condition=Ready pods --timeout=300s --all
 
