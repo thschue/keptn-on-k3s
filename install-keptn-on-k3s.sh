@@ -189,6 +189,7 @@ function print_config {
 To use keptn:
 - Install the keptn CLI: curl -sL https://get.keptn.sh | sudo -E bash
 - Authenticate: keptn auth  --api-token "${KEPTN_API_TOKEN}" --endpoint "${PREFIX}://api.keptn.$MY_IP.xip.io"
+- API-Secret: kubectl create secret generic keptn-api --from-literal=API_TOKEN="${KEPTN_API_TOKEN}" --from-literal=API_URL="${PREFIX}://api.keptn.$MY_IP.xip.io"
 EOF
 }
 
